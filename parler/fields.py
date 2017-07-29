@@ -145,9 +145,9 @@ class TranslatedFieldDescriptor(property):
 
         return field.verbose_name
     
-     def fset(self, val):
-         # It shouldn't ever happen, method only for satisfy Django 1.11 checks.
-         raise RuntimeError("Dummy metod hit: %s.fset" % self.__class__.__name__)
+    def fset(self, val):
+        # It shouldn't ever happen, method only for satisfy Django 1.11 checks.
+        raise RuntimeError("Dummy metod hit: %s.fset" % self.__class__.__name__)
 
 
 class LanguageCodeDescriptor(object):
